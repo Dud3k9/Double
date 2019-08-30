@@ -10,6 +10,20 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
+                android:name=".Multiplayer"
+                android:label="@string/title_activity_multiplayer"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".SummaryActivity"
+                android:label="@string/title_activity_summary"
+                android:parentActivityName=".MainActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.dudek9.adouble.MainActivity"/>
+        </activity>
+        <activity
                 android:name=".Singleplayer"
                 android:label="@string/title_activity_singleplayer"
                 android:theme="@style/AppTheme.NoActionBar">

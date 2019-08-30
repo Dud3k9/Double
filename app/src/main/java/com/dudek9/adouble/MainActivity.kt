@@ -34,9 +34,11 @@ class MainActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 1 && resultCode == Activity.RESULT_OK) {
             val fm = supportFragmentManager
-            val summary = Summary(data!!.getIntExtra("summary", 0))
-            fm!!.beginTransaction().add(R.id.bg, summary).commit()
-
+//            val summary = Summary(data!!.getIntExtra("summary", 0))
+//            fm!!.beginTransaction().add(R.id.bg, summary).commit()
+            var intent: Intent = Intent(this, SummaryActivity::class.java)
+            intent.putExtra("summary", data!!.getIntExtra("summary", 0))
+            startActivity(intent)
         }
     }
 

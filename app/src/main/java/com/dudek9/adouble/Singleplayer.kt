@@ -55,7 +55,7 @@ class Singleplayer : AppCompatActivity() {
 
     fun click(view: View) {
 
-        if (card < 2) {//TODO!!!!!
+        if (card < 19) {
             if (checkResault(view)) {
                 points++
                 Points.setText("" + points)
