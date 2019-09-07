@@ -10,6 +10,16 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
+                android:name=".Join"
+                android:label="@string/title_activity_join"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".Create"
+                android:label="@string/title_activity_create"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
                 android:name=".Multiplayer"
                 android:label="@string/title_activity_multiplayer"
                 android:theme="@style/AppTheme.NoActionBar">

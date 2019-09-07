@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.content.getSystemService
 import androidx.fragment.app.FragmentManager
+
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +17,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        var conection:Conection= Conection()
+        conection.write()
+        conection.read()
 
         singleplayer.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
@@ -24,6 +27,14 @@ class MainActivity : AppCompatActivity() {
                 startActivityForResult(intent, 1)
 
             }
+        })
+
+        multiplayer.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(p0: View?) {
+                var intent =Intent(this@MainActivity,Multiplayer::class.java)
+                startActivity(intent)
+            }
+
         })
 
 

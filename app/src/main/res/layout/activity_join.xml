@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Multiplayer">
+        tools:context=".Join">
 
     <com.google.android.material.appbar.AppBarLayout
             android:layout_height="wrap_content"
@@ -21,6 +21,6 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_multiplayer"/>
+    <include layout="@layout/content_join"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
