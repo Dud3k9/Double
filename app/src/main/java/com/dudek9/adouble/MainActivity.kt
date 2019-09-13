@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         multiplayer.setOnClickListener(object : View.OnClickListener{
             override fun onClick(p0: View?) {
                 var intent =Intent(this@MainActivity,Multiplayer::class.java)
-                startActivity(intent)
+               // startActivity(intent)
             }
 
         })
