@@ -41,6 +41,8 @@ class Singleplayer : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_singleplayer)
+        window.navigationBarColor=resources.getColor(R.color.colorPrimary)
+
         Singleplayer.sigleplayer = this
         timer = Clock()
 
@@ -95,12 +97,12 @@ class Singleplayer : AppCompatActivity() {
     }
 
     fun setMainCard() {
-        image1.setImageResource(resources.getIdentifier("a" + mainCardArray[0], "drawable", packageName))
-        image2.setImageResource(resources.getIdentifier("a" + mainCardArray[1], "drawable", packageName))
-        image3.setImageResource(resources.getIdentifier("a" + mainCardArray[2], "drawable", packageName))
-        image4.setImageResource(resources.getIdentifier("a" + mainCardArray[3], "drawable", packageName))
-        image5.setImageResource(resources.getIdentifier("a" + mainCardArray[4], "drawable", packageName))
-        image6.setImageResource(resources.getIdentifier("a" + mainCardArray[5], "drawable", packageName))
+        image1.setImageResource(resources.getIdentifier("a" + mainCardArray[0], "mipmap", packageName))
+        image2.setImageResource(resources.getIdentifier("a" + mainCardArray[1], "mipmap", packageName))
+        image3.setImageResource(resources.getIdentifier("a" + mainCardArray[2], "mipmap", packageName))
+        image4.setImageResource(resources.getIdentifier("a" + mainCardArray[3], "mipmap", packageName))
+        image5.setImageResource(resources.getIdentifier("a" + mainCardArray[4], "mipmap", packageName))
+        image6.setImageResource(resources.getIdentifier("a" + mainCardArray[5], "mipmap", packageName))
 
         image1.rotation= (Math.random()*360).toFloat()
         image2.rotation= (Math.random()*360).toFloat()
@@ -111,12 +113,12 @@ class Singleplayer : AppCompatActivity() {
     }
 
     fun setSecondCard() {
-        image7.setImageResource(resources.getIdentifier("a" + secondCardArray[0], "drawable", packageName))
-        image8.setImageResource(resources.getIdentifier("a" + secondCardArray[1], "drawable", packageName))
-        image9.setImageResource(resources.getIdentifier("a" + secondCardArray[2], "drawable", packageName))
-        image10.setImageResource(resources.getIdentifier("a" + secondCardArray[3], "drawable", packageName))
-        image11.setImageResource(resources.getIdentifier("a" + secondCardArray[4], "drawable", packageName))
-        image12.setImageResource(resources.getIdentifier("a" + secondCardArray[5], "drawable", packageName))
+        image7.setImageResource(resources.getIdentifier("a" + secondCardArray[0], "mipmap", packageName))
+        image8.setImageResource(resources.getIdentifier("a" + secondCardArray[1], "mipmap", packageName))
+        image9.setImageResource(resources.getIdentifier("a" + secondCardArray[2], "mipmap", packageName))
+        image10.setImageResource(resources.getIdentifier("a" + secondCardArray[3], "mipmap", packageName))
+        image11.setImageResource(resources.getIdentifier("a" + secondCardArray[4], "mipmap", packageName))
+        image12.setImageResource(resources.getIdentifier("a" + secondCardArray[5], "mipmap", packageName))
 
         image7.rotation= (Math.random()*360).toFloat()
         image8.rotation= (Math.random()*360).toFloat()
