@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "728742760853",
+    "firebase_url": "https://double-8d54b.firebaseio.com",
+    "project_id": "double-8d54b",
+    "storage_bucket": "double-8d54b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728742760853:android:0321fa40f5558ab4",
+        "android_client_info": {
+          "package_name": "com.dudek9.adouble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728742760853-3spaff18q8ifnpl484vgcbv54tvisbch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFuhT__6n6KTHFuDyZUV0Q1I9o4bPFUIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728742760853-3spaff18q8ifnpl484vgcbv54tvisbch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
